@@ -40,5 +40,5 @@ def other(click):
     return render_template(template_name_or_list=f"{unquote(click)}.html")
 
 if __name__ == '__main__':  
-   webbrowser.open("http://127.0.0.1:5000/")
-   app.run()
+   webbrowser.open("http://127.0.0.1:80/")
+   app.run(host='0.0.0.0', port=80)
